@@ -1,12 +1,11 @@
-
-
 import requests
 from bs4 import BeautifulSoup
 import re
 import time
 
 def parse_site(logging):
-    count_page = 49
+    """Функция парсинга целевого сайта"""
+    count_page = 0
     # Создаю список куда будет записана вся скаченная информация (список)
     result_info_books = []
     # Запускаю бесконечный цикл для прохода по всем страницам сайта
